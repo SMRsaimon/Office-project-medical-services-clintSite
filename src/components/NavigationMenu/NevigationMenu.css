@@ -1,5 +1,5 @@
 nav {
-    position: fixed;
+    /* position: fixed; */
     z-index: 99;
     width: 100%;
 
@@ -26,17 +26,17 @@ nav .wrapper {
     text-decoration: none;
 }
 
-.wrapper .nav-links {
+.wrapper .custom-nav-links {
     display: inline-flex;
     margin-left: auto;
     margin-right: auto;
 }
 
-.nav-links li {
+.custom-nav-links li {
     list-style: none;
 }
 
-.nav-links li a {
+.custom-nav-links li a {
     color: #000000;
     text-decoration: none;
     font-size: 18px;
@@ -45,8 +45,9 @@ nav .wrapper {
     border-radius: 5px;
     transition: all 0.3s ease;
 }
-.nav-links li a:hover {
-   color: purple;
+
+.custom-nav-links li a:hover {
+    color: purple;
 }
 
 .wrapper .btn {
@@ -75,10 +76,19 @@ nav .wrapper {
 
     .close-btn {
         color: red;
-        
+
     }
 
-    .wrapper .nav-links {
+    .navigation-block {
+        display: block !important;
+
+    }
+    .navigation-none{
+        left: 120% !important;
+        transition: all 0.8s ease-in-out;
+    }
+
+    .wrapper .custom-nav-links {
         position: fixed;
         height: 100vh;
         width: 60%;
@@ -94,6 +104,7 @@ nav .wrapper {
         transition: all 0.3s ease;
     }
 
+
     /* custom scroll bar */
     ::-webkit-scrollbar {
         width: 5px;
@@ -107,7 +118,7 @@ nav .wrapper {
         background: #01080fa4;
     }
 
-    #menu-btn:checked~.nav-links {
+    #menu-btn:checked~.custom-nav-links {
         left: 0%;
     }
 
@@ -119,15 +130,15 @@ nav .wrapper {
         display: block;
     }
 
-    .nav-links li {
+    .custom-nav-links li {
         margin: 15px 10px;
     }
 
-    .nav-links li a {
+    .custom-nav-links li a {
         padding: 0 20px;
         display: block;
         font-size: 20px;
-        
+
     }
 }
 

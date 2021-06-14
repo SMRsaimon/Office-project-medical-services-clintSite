@@ -1,4 +1,6 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import NavigationMenu from "./components/NavigationMenu/NavigationMenu.jsx"
 import {
   BrowserRouter as Router,
@@ -6,6 +8,7 @@ import {
   Route,
   
 } from "react-router-dom";
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -14,10 +17,12 @@ function App() {
       <Switch>
         <Route exact path="/">
         <NavigationMenu/>
-        
+       
         </Route>
         <Route  path="/home">
         <NavigationMenu/>
+        <Home/>
+
         
         </Route>
         <Route  path="/shop">
