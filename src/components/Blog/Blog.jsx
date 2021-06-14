@@ -32,7 +32,7 @@ const Blog = () => {
 
               
                </div>
-               <div className="col-md-4 offset-2">
+               <div className="col-md-4 offset-md-2">
                    <div className="video-container">
                    <iframe title="First Video " width="500" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
