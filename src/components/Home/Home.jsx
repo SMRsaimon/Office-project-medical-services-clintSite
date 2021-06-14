@@ -1,4 +1,5 @@
 import React from 'react';
+import Blog from '../Blog/Blog';
 import About from './About/About';
 
 import "./Home.css"
@@ -9,6 +10,7 @@ const Home = () => {
         <div className="container mt-2"> 
            <HomeBannerSlider/>
            <About/>
+           <Blog/>
             
         </div>
     );
