@@ -6,14 +6,14 @@ import { NavLink } from "react-router-dom";
 
 const NavigationMenu = () => {
   const isActive = {
-    fontWeight: "bold",
+   
 
-    backgroundColor: "rgba(238, 13, 200, 0.274)",
+    color: "purple",
   };
 
   return (
     <>
-      <nav id="navigation">
+      <nav className="shadow" id="navigation">
         <div className="wrapper">
           <div className="logo">
             <NavLink to="/">Logo</NavLink>
