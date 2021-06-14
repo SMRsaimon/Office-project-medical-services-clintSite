@@ -1,5 +1,6 @@
 import React from 'react';
 import Blog from '../Blog/Blog';
+import MobileAppFeature from '../MobileAppFeature/MobileAppFeature';
 import About from './About/About';
 
 import "./Home.css"
@@ -14,6 +15,7 @@ const Home = () => {
          
            <About/>
            <Blog/>
+           <MobileAppFeature/>
             
         </div>
         </div>

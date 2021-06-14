@@ -1,0 +1,28 @@
+.fetaure-container{
+
+    width: 89%;
+}
+
+.fetaure-taitle{
+
+    font-family: Roboto,sans-serif,-apple-system,BlinkMacSystemFont;
+    font-weight: 700;
+    font-style: normal;
+    color: #000;
+    margin-top: 0;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: .016rem;
+    margin-bottom: 10px;
+}
+.fetaure-description {
+    font-size: 18px;
+    line-height: 1.375;
+    letter-spacing: -.005rem;
+    color: #616161;
+    font-family: Roboto,sans-serif,-apple-system,BlinkMacSystemFont;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
