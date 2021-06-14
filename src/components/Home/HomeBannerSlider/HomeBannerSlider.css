@@ -1,0 +1,36 @@
+.slider-image-style {
+    height: 450px;
+    width: 100%;
+}
+.swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next,    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev   {
+
+        color: purple !important;
+
+    }
+
+.swiper-pagination-bullet-active {
+        opacity: 1;
+        background: purple !important;
+    }
+  
+
+@media screen and (max-width: 970px) {
+    .slider-image-style {
+        height: 350px;
+        width: 100%;
+
+
+    }
+
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next,    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev   {
+
+        display: none !important;
+
+    }
+
+
+}

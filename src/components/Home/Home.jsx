@@ -1,11 +1,15 @@
 import React from 'react';
+
 import "./Home.css"
+import HomeBannerSlider from './HomeBannerSlider/HomeBannerSlider';
 
 const Home = () => {
     return (
-        <div className="container"> 
+        <div className="container mt-2"> 
 
-           <h1 style={{color:"black"}} >Home components </h1>
+          
+
+           <HomeBannerSlider/>
             
         </div>
     );
