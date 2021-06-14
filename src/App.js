@@ -9,6 +9,9 @@ import {
   
 } from "react-router-dom";
 import Home from './components/Home/Home';
+import Shop from './components/Shop/Shop';
+import PeriodTracker from './components/PeriodTracker/PeriodTracker';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
@@ -27,14 +30,17 @@ function App() {
         </Route>
         <Route  path="/shop">
         <NavigationMenu/>
+        <Shop/>
         
         </Route>
         <Route  path="/periodTracker">
         <NavigationMenu/>
+        <PeriodTracker/>
         
         </Route>
         <Route  path="/blog">
         <NavigationMenu/>
+        <Blog/>
         
         </Route>
       </Switch>
