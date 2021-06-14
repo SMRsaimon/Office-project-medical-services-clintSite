@@ -26,3 +26,17 @@
     margin-top: 0;
     margin-bottom: 18px;
 }
+.fetature-content-wrapper{
+    margin-left: -38px;
+}
+@media screen and (max-width: 970px) {
+
+.fetature-content-wrapper{
+    margin-left: 0px;
+}
+
+.left{
+    order:2
+}
+
+}

@@ -46,29 +46,25 @@ const MobileAppFeature = () => {
         <div className="col-12">
           <h1 className="my-5">Key Features</h1>
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8 left">
           <div className="fetaure-container">
             .
             {fetature.map((x) => (
               <>
                 <div className="fetature-wrapper row">
-                   <div className="col-2">
-                       <img src={x.logo} alt="" />
-
-                   </div>
-                   <div style={{marginLeft:"-38px"}} className="col-10">
-                      <h2 className="fetaure-taitle">{x.title}</h2>
-                      <p className="fetaure-description">{x.description}</p>
-                   </div>
-
-
-                
+                  <div className="col-2">
+                    <img src={x.logo} alt="" />
+                  </div>
+                  <div className="col-10 fetature-content-wrapper">
+                    <h2 className="fetaure-taitle">{x.title}</h2>
+                    <p className="fetaure-description">{x.description}</p>
+                  </div>
                 </div>
               </>
             ))}
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 d-flex justify-content-center pt-2 order-1">
           <img src={mobileAPP} alt="" />
         </div>
       </div>
