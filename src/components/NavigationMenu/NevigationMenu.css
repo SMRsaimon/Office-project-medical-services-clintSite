@@ -141,6 +141,10 @@ nav .wrapper {
         font-size: 20px;
 
     }
+   .menu-btn{
+
+    margin-top: -6px !important;
+   }
 }
 
 nav input {
