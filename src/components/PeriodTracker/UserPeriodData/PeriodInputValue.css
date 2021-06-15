@@ -69,16 +69,18 @@
 
 
 }
+
 @media (max-width: 760px) {
     .spinner-Container {
-     
+
         margin-left: 142px;
 
     }
 }
+
 @media (max-width: 500px) {
     .spinner-Container {
-     
+
         margin-left: 70px;
 
 

@@ -3,6 +3,7 @@ import "date-fns";
 import "./UserPeriodData.css";
 import DataTitle from "./DataTitle";
 import PeriodInputValue from "./PeriodInputValue";
+import { Link, useHistory } from "react-router-dom";
 
 export const UserPeriodData = () => {
   const [date, setDate] = useState(new Date().toLocaleDateString());
@@ -10,6 +11,8 @@ export const UserPeriodData = () => {
   const [DuraTion, setDuraTion] = useState(4);
   const [cycleLong, setCycleLong] = useState(28);
   const [periodData, setPeriodData] = useState({})
+
+  const history=useHistory()
 
 
 //   Hendel Date change 
@@ -58,13 +61,12 @@ const hendelDuraTionDecrement = () => {
 //   hendel User PeriodData
   const hendelUserPeriodData=()=>{
 
-      const data={date, DuraTion,cycleLong }
+      let data={date, DuraTion,cycleLong }
       setPeriodData(data)
-
-
+      localStorage.setItem("data",  JSON.stringify(data) )
+    
+      history.push("/periodTrackerResult")
   }
-
-  console.log(periodData)
 
   return (
     <div className="row my-5 py-5" id="UserData">
@@ -94,7 +96,7 @@ const hendelDuraTionDecrement = () => {
           hendelIncrement={hendelCycleIncrement}
         />
       </div>
-      <div onClick={hendelUserPeriodData} className="col-12 d-flex justify-content-center mt-5 ">
+      <div  onClick={hendelUserPeriodData} className="col-12 d-flex justify-content-center mt-5 ">
           <button className="btn btn-getResult"  type="button"> Get Result </button>
       </div>
     </div>

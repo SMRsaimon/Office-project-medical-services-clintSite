@@ -13,6 +13,7 @@ import Shop from './components/Shop/Shop';
 
 import Blog from './components/Blog/Blog';
 import PeriodTracker from './components/PeriodTracker/Main/PeriodTracker';
+import PeriodTrackingResult from './components/PeriodTracker/PeriodTrackingResult/PeriodTrackingResult';
 
 function App() {
   return (
@@ -38,6 +39,12 @@ function App() {
         <Route  path="/periodTracker">
         <NavigationMenu/>
         <PeriodTracker/>
+       
+        
+        </Route>
+        <Route  path="/periodTrackerResult">
+        <NavigationMenu/>
+        <PeriodTrackingResult/>
        
         
         </Route>
