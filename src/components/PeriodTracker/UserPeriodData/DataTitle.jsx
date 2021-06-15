@@ -2,7 +2,7 @@ import React from "react";
 
 const DataTitle = ({ number, heading }) => {
   return (
-    <div>
+    <div className="pt-4">
       <h2>
         <span>{number}</span>
       </h2>

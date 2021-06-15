@@ -95,7 +95,7 @@ const hendelDuraTionDecrement = () => {
         />
       </div>
       <div onClick={hendelUserPeriodData} className="col-12 d-flex justify-content-center mt-5 ">
-          <button className="btn btn-getResult"  type="button"> Get Result </button>
+          <button className="btn btn-primary"  type="button"> Get Result </button>
       </div>
     </div>
   );

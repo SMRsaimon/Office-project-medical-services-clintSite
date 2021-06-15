@@ -30,52 +30,20 @@
 
 }
 
-.spinner-Container{
 
-    width: 72%;
+.btn-getResult{
 
-   
-}
-.periodStayCount{
-    padding: 6px 10px;
-    color: white;
-    font-size: 20px;
-    outline: none;
-    border: none;
-    background-color: rgba(218, 34, 172, 0.795);
-    margin-top: -15px;
-    width: 140px;
-    position: relative;
-    top: 4.5px;
-
-
-}
-.periodStayCount input[type="button"]{
-    border: none;
-    background: none;
-
-}
-
-
-   
-
-.decrement-btn, .increment-btn{
-    border: none;
     background: linear-gradient(to right, rgba(128, 0, 128, 0.425), rgb(253, 31, 253));
-   
-    padding: 7px 10px;
     color: white;
     font-size: 20px;
-   outline: none;
-   width: 20%;
-   
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 25px;
 }
-/* style={{ borderRadius: "10px 0px 0px 10px;"}} */
-.decrement-btn{
- border-radius:20px 0px 0px 20px ;
+.btn-getResult:hover{
 
+   
+    color: rgba(255, 255, 255, 0.884);
 }
-.increment-btn{
-    border-radius: 0px 20px 20px 0px;
-}
+  
     

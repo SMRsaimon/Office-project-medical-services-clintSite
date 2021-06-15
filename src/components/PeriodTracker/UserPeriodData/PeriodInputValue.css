@@ -1,0 +1,72 @@
+.spinner-Container {
+
+    width: 310px;
+    margin-left: 70px;
+
+
+}
+
+.periodStayCount {
+    padding: 6px 10px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: rgba(218, 34, 172, 0.995);
+    margin-top: -15px;
+    width: 100px;
+    position: relative;
+    top: 4.5px;
+
+
+}
+
+.periodStayCount input[type="button"] {
+    border: none;
+    background: none;
+
+}
+
+
+
+
+.decrement-btn,
+.increment-btn {
+    border: none;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.425), rgb(253, 31, 253));
+
+    padding: 7px 10px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    width: 20%;
+
+}
+
+/* style={{ borderRadius: "10px 0px 0px 10px;"}} */
+.decrement-btn {
+    border-radius: 20px 0px 0px 20px;
+
+}
+
+.increment-btn {
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+
+@media (max-width: 1000px) {
+    .spinner-Container {
+        margin-left: 115px;
+
+    }
+
+    .periodStayCount {
+
+        width: 100px;
+
+    }
+
+
+
+}
