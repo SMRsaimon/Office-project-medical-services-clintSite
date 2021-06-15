@@ -1,0 +1,49 @@
+.bannerContainer img{
+    width: 100%;
+
+}
+.bannerContainer{
+    position: relative;
+
+
+}
+.banner-content{
+    position: absolute;
+    top: 50%;
+    left: 12%;
+    transform: skew(
+-20deg
+) translate(-12%, -50%);
+    background: #EE2C74;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.425), rgb(253, 31, 253));
+    color: #fff;
+    padding: 10px 20px;
+   
+    width: 365px;
+    text-align: center;
+
+
+}
+.banner-content h1{
+  font-size: 24px;
+
+
+}
+
+@media (max-width: 800px){
+    .banner-content {
+        transform: none;
+    margin-bottom: 0;
+    padding: 3px 20px;
+    top: 68%;
+    width: 100%;
+    left: 0;
+    }
+    .banner-content h1{
+        font-size: 20px;
+      
+      
+      }
+
+
+}
