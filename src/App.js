@@ -1,6 +1,5 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import NavigationMenu from "./components/NavigationMenu/NavigationMenu.jsx"
 import {
   BrowserRouter as Router,
@@ -14,6 +13,7 @@ import Shop from './components/Shop/Shop';
 import Blog from './components/Blog/Blog';
 import PeriodTracker from './components/PeriodTracker/Main/PeriodTracker';
 import PeriodTrackingResult from './components/PeriodTracker/PeriodTrackingResult/PeriodTrackingResult';
+import AdminSiteBar from './components/adminPanel/AdminSiteBar/AdminSiteBar';
 
 function App() {
   return (
@@ -50,6 +50,11 @@ function App() {
         </Route>
         <Route  path="/blog">
         <NavigationMenu/>
+        <Blog/>
+        
+        </Route>
+        <Route  path="/adminPanel">
+        <AdminSiteBar/>
         <Blog/>
         
         </Route>

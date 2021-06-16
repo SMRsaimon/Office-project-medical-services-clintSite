@@ -6,6 +6,7 @@ import PeriodInputValue from "./PeriodInputValue";
 import { Link, useHistory } from "react-router-dom";
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
+import { periodCalculation } from "../PeriodTrackingResult/PeriodCalculation";
 
 export const UserPeriodData = () => {
   const [date, setDate] = useState(new Date().toLocaleDateString());
@@ -66,6 +67,7 @@ const hendelDuraTionDecrement = () => {
       let data={date, DuraTion,cycleLong }
       setPeriodData(data)
       localStorage.setItem("data",  JSON.stringify(data) )
+      periodCalculation(data.DuraTion, data.cycleLong,data.date )
     
       history.push("/periodTrackerResult")
   }

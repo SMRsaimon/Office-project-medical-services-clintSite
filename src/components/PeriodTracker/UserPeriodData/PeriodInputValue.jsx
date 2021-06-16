@@ -2,6 +2,8 @@ import React from 'react';
 import "./PeriodInputValue.css"
 
 const PeriodInputValue = ({Value,hendelDecrement,hendelIncrement  }) => {
+
+ 
     return (
         <>
              <div className="spinner-Container  ">
