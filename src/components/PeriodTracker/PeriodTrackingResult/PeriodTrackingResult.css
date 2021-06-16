@@ -1,0 +1,6 @@
+#DayPicker-custom-style .DayPicker-wrapper{
+ 
+ background: linear-gradient(to right, rgba(128, 0, 128, 0.425), rgb(253, 31, 253));
+ padding: 20px;
+ font-size: 24px;
+}

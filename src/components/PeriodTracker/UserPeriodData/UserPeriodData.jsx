@@ -4,6 +4,8 @@ import "./UserPeriodData.css";
 import DataTitle from "./DataTitle";
 import PeriodInputValue from "./PeriodInputValue";
 import { Link, useHistory } from "react-router-dom";
+import DayPickerInput from 'react-day-picker/DayPickerInput';
+import 'react-day-picker/lib/style.css';
 
 export const UserPeriodData = () => {
   const [date, setDate] = useState(new Date().toLocaleDateString());
@@ -16,10 +18,10 @@ export const UserPeriodData = () => {
 
 
 //   Hendel Date change 
-  const handelDateChange = (e) => {
-    setDate(e.target.value);
+  // const handelDateChange = (e) => {
+  //   setDate(e.target.value);
     
-  };
+  // };
 
 //   Hendel Duration Increment decrement 
   const hendelDuraTionIncrement = () => {
@@ -77,7 +79,7 @@ const hendelDuraTionDecrement = () => {
         />
 
         <div className="input-group d-flex justify-content-center">
-          <input type="date" name="date" id="" onChange={handelDateChange} />
+        <DayPickerInput onDayChange={day =>setDate(day.toLocaleDateString())} />
         </div>
       </div>
       <div className="col-md-4">
