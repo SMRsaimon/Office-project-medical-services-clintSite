@@ -55,7 +55,7 @@ function App() {
         </Route>
         <Route  path="/adminPanel">
         <AdminSiteBar/>
-        <Blog/>
+        
         
         </Route>
       </Switch>

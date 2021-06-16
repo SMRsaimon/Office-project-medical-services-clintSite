@@ -1,4 +1,4 @@
-.deshboard {
+/* .deshboard {
   width: 300px;
   height: 100vh;
   padding: 30px;
@@ -28,4 +28,40 @@
 }
 .deshboard .deshboardLogoContainer:hover {
   background-color: transparent;
+} */
+
+.pro-sidebar {
+  color: black !important;
+  
+
+}
+.pro-sidebar .pro-menu .pro-menu-item.pro-sub-menu > .pro-inner-item > .pro-arrow-wrapper .pro-arrow {
+  
+  border-color: #000000 !important;
+}
+.pro-sidebar .pro-menu .pro-menu-item {
+  font-size: 24px !important;
+}
+
+.pro-menu {
+
+  background: #03a9f4 !important;
+}
+.pro-sidebar .pro-menu > ul > .pro-sub-menu > .pro-inner-list-item {
+  
+  background: rgba(3, 168, 244, 0.261) !important;
+}
+
+
+.pro-sidebar > .pro-sidebar-inner {
+  background: #03a9f4 !important;
+  height: 100vh !important ;
+ 
+}
+
+/* icon dstyle */
+.pro-sidebar .pro-menu .pro-menu-item > .pro-inner-item > .pro-icon-wrapper {
+ 
+  font-size: 24px !important;
+  color: #5c00ff !important;
 }
