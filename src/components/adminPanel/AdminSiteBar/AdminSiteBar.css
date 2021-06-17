@@ -55,7 +55,8 @@
 
 .pro-sidebar > .pro-sidebar-inner {
   background: #03a9f4 !important;
-  height: 100vh !important ;
+  min-height: 90vh !important ;
+  max-height: auto;
  
 }
 
@@ -64,4 +65,16 @@
  
   font-size: 24px !important;
   color: #5c00ff !important;
+}
+.sidebar-container{
+  margin-left: -18px;
+}
+
+
+/* admin header  */
+
+.admin-header{
+
+  height: 60px;
+  background: #03a9f4 ;
 }

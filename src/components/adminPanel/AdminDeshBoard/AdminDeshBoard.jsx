@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./AdminDeshBoard.css";
-import AdminSiteBar from "../AdminSiteBar/AdminSiteBar";
+
 import { useForm } from "react-hook-form";
-import { userContext } from "../../../App";
+
 const AdminDeshBoard = () => {
   const [admin, setAdmin] = useState(false);
-  const { loggedInUser } = useContext(userContext);
+ 
 
   const {
     register,
@@ -34,20 +34,16 @@ const AdminDeshBoard = () => {
   return (
     <div className="container-fluid">
       <div className="row">
-        <div className="col-3">
-          <AdminSiteBar />
-        </div>
+        
         <div className="col-md-9 bg-light">
           <div className="row">
             <div className="col-12 d-flex ">
               <div className="makeAdminHeader">
                 <h1>Make Admin </h1>
               </div>
-              <div className="makeAdminHeader">
-                <h4 className="text-right">{loggedInUser?.name && loggedInUser.name} </h4>
-              </div>
+              
             </div>
-            <div className="col-md-6 mt-5 pt-5">
+            <div className="col-md-10 yt-5 pt-5">
               <form onSubmit={handleSubmit(onSubmit)}>
                 {admin && <h5 style={{ color: "green" }}> Admin Added SuccessFully </h5>}
 

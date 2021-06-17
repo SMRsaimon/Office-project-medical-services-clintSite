@@ -6,12 +6,12 @@
 .inputAdminEmail {
   width: 60%;
   padding: 6px 24px;
-  border: 6px solid var(--brand-color);
+  border: 6px solid purple;
   outline: none;
 }
 .inputAdminButton {
   padding: 12px 24px;
-  background-color: var(--brand-color);
+  background-color: purple;
   border: none;
   border-radius: 0px 6px 6px 0px;
   color: white;
