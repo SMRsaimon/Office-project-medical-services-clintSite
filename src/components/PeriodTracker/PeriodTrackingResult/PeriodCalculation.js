@@ -1,7 +1,7 @@
 
 export  const periodCalculation=(DuraTion, cycleLong ,date )=>{
 
-    console.log(DuraTion, cycleLong)
+    
     const periodCycleDays =cycleLong;
   const bleedingDays = DuraTion;
   const fertilePhaseStart = periodCycleDays - 20;

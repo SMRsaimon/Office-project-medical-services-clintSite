@@ -4,9 +4,14 @@ import "./PeriodInputValue.css"
 const PeriodInputValue = ({Value,hendelDecrement,hendelIncrement  }) => {
 
  
+
+
+
+
+  
     return (
         <>
-             <div className="spinner-Container  ">
+          <div className="spinner-Container">
           <button  onClick={hendelDecrement} className="btn decrement-btn">-</button>
 
           <button  className="periodStayCount" type="button">

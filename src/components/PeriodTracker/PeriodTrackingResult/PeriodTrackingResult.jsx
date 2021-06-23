@@ -6,87 +6,72 @@ import "./PeriodTrackingResult.css";
 import DayPicker from "react-day-picker";
 import "react-day-picker/lib/style.css";
 import { periodCalculation } from "./PeriodCalculation";
-import { FaLessThanEqual } from "react-icons/fa";
 
 const PeriodTrackingResult = () => {
   const [periodData, setPeriodData] = useState({});
+
   useEffect(() => {
     const data = localStorage.getItem("data");
     setPeriodData(JSON.parse(data));
   }, []);
   // date, DuraTion,cycleLong
 
-  const periodCalculateData = periodCalculation(
+  let periodCalculateData = periodCalculation(
     periodData.DuraTion,
     periodData.cycleLong,
     periodData.date
   );
 
-  
-  const [,,,target]=periodCalculateData
+  const [, , , target] = periodCalculateData;
 
- const {begin, end }=target
+  const { begin, end } = target;
 
-//  get array of dates between 2 dates
-Date.prototype.addDays = function(days) {
-  let  dat = new Date(this.valueOf())
-  dat.setDate(dat.getDate() + days);
-  return dat;
-}
-
-function getDates(startDate, stopDate) {
- const  dateArray = [];
- let  currentDate = startDate;
- while (currentDate <= stopDate) {
-   dateArray.push(currentDate)
-   currentDate = currentDate.addDays(1);
- }
- return dateArray;
-}
-
-
-const  dateArray = getDates(new Date(begin), (new Date(end)));
-
-
-
-
-
- 
-
-  const modifiers = {
-    thursdays: { daysOfWeek: [1, 4] },
-    // birthday: new Date(),
-    possible_period_dates_Begin:new Date(dateArray[0]),
-    possible_period_dates_end: new Date(dateArray[1]),
-    possible_period_dates3:new Date(dateArray[2]),
-      
-
-    
+  //  get array of dates between 2 dates
+  Date.prototype.addDays = function (days) {
+    let dat = new Date(this.valueOf());
+    dat.setDate(dat.getDate() + days);
+    return dat;
   };
-  const modifiersStyles = {
-    // birthday: {
-    //   color: "white",
-    //   backgroundColor: "#ffc107",
-    // },
-    possible_period_dates_Begin: {
-      color: "white",
-      backgroundColor: "#ffc107",
-    },
-    possible_period_dates_end:{
-      color: "white",
-      backgroundColor: "#ffc107",
 
-    },
-    possible_period_dates3:{
-      color: "white",
-      backgroundColor: "#ffc107",
-
+  function getDates(startDate, stopDate) {
+    const dateArray = [];
+    let currentDate = startDate;
+    while (currentDate <= stopDate) {
+      dateArray.push(currentDate);
+      currentDate = currentDate.addDays(1);
     }
+    return dateArray;
+  }
 
-    // thursdays: {
-    //   color: "#ffc107",
-    //   backgroundColor: "#3f51b5ab",
-    // },
+  const dateArray = getDates(new Date(begin), new Date(end));
+
+  let modifiers = {};
+  let modifiersStyles = {};
+
+  for (let i = 0; i < dateArray.length; i++) {
+    const element = dateArray[i];
+    let id = Math.floor((1 + Math.random()) * 0x10000)
+      .toString(16)
+      .substring(1);
+
+    modifiers[id] = new Date(element);
+    modifiersStyles[id] = {
+      color: "black",
+      backgroundColor: "#ffc107",
+    };
+  }
+
+  // hendel month cheange
+  const hendelMonthChnage = (CurrentMonth) => {
+    // const lastDate = dateArray[dateArray.length - 1];
+    // const newData ={  
+    //   date:lastDate,
+    //   DuraTion:  dateArray.length,
+    //   cycleLong:  periodData.cycleLong,
+      
+    // }
+    // localStorage.setItem("data",  JSON.stringify(newData) )
+    
   };
 
   return (
@@ -97,10 +82,12 @@ const  dateArray = getDates(new Date(begin), (new Date(end)));
         <div className="row d-flex mt-5 pt-5">
           <div className="col-md-12  d-flex  justify-content-center">
             <DayPicker
+              onMonthChange={hendelMonthChnage}
               modifiers={modifiers}
               modifiersStyles={modifiersStyles}
               numberOfMonths={1}
               pagedNavigation
+              month={dateArray[0]}
             />
           </div>
         </div>

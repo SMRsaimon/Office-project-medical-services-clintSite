@@ -9,11 +9,6 @@ const PeriodTracker = () => {
        <div className="container">
            <PeriodBanner/>
            <UserPeriodData/>
-         
-       
-        
-
-
        </div>
     );
 };

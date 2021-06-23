@@ -3,7 +3,7 @@ import "date-fns";
 import "./UserPeriodData.css";
 import DataTitle from "./DataTitle";
 import PeriodInputValue from "./PeriodInputValue";
-import { Link, useHistory } from "react-router-dom";
+import {  useHistory } from "react-router-dom";
 import DayPickerInput from 'react-day-picker/DayPickerInput';
 import 'react-day-picker/lib/style.css';
 import { periodCalculation } from "../PeriodTrackingResult/PeriodCalculation";
@@ -18,12 +18,6 @@ export const UserPeriodData = () => {
   const history=useHistory()
 
 
-//   Hendel Date change 
-  // const handelDateChange = (e) => {
-  //   setDate(e.target.value);
-    
-  // };
-
 //   Hendel Duration Increment decrement 
   const hendelDuraTionIncrement = () => {
     setDuraTion((DuraTion) => {
@@ -31,7 +25,11 @@ export const UserPeriodData = () => {
       return newCount;
     });
 
+
+
 }
+
+//hendelDuraTionDecrement
 const hendelDuraTionDecrement = () => {
     setDuraTion((DuraTion) => {
       const newCount = DuraTion >= 2 && DuraTion <= 10 ? DuraTion - 1 : DuraTion;
@@ -49,7 +47,7 @@ const hendelDuraTionDecrement = () => {
       });
     };
 
-
+//hendelCycleDeccrement
 
   const hendelCycleDeccrement = () => {
     setCycleLong((cycleLong) => {

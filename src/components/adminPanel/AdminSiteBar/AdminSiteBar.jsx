@@ -18,6 +18,8 @@ import {
 import "react-pro-sidebar/dist/css/styles.css";
 import Test from "../Test";
 import AdminDeshBoard from "../AdminDeshBoard/AdminDeshBoard";
+import Artical from "../ManageBlog/Artical/Artical";
+import Video from "../ManageBlog/Video/Video";
 
 const AdminSiteBar = () => {
   let { path, url } = useRouteMatch();
@@ -64,11 +66,14 @@ const AdminSiteBar = () => {
 </SidebarFooter> */}
           </ProSidebar>
         </div>
-        <div className="col-md-7">
+        <div className="col-md-8 ">
           <Switch>
             <Route exact path={path}></Route>
             <Route path={`${path}/artical`}>
-              <Test />
+              <Artical />
+            </Route>
+            <Route path={`${path}/video`}>
+              <Video />
             </Route>
             <Route path={`${path}/makeAdmin`}>
               <AdminDeshBoard />
@@ -83,26 +88,4 @@ const AdminSiteBar = () => {
 
 export default AdminSiteBar;
 
-// {/* <div className="deshboard">
-// <ul>
-//   <li className="deshboardLogoContainer">
-//     <Link to="/">
-//       <img className="card-img-top" src="https://expert-themes.com/newwp/globex/wp-content/uploads/2020/11/logo.svg" alt="profile" />
-//     </Link>
-//   </li>
 
-//       <li>
-//         <Link to="/addminOrderList"> Order List</Link>
-//       </li>
-//       <li>
-//         <Link to="/addProduct">Add product</Link>
-//       </li>
-//       <li>
-//         <Link to="/addAdmin">Make Admin</Link>
-//       </li>
-//       <li>
-//         <Link to="/manageProduct">Manage Products</Link>
-//       </li>
-
-// </ul>
-// </div> */}
